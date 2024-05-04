@@ -15,12 +15,22 @@ body {
 
 }
 
+.header ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.header li {
+    margin-right: 50px;
+}
+
 #pai {
     margin: 0px;
     padding: 30px;
 }
 
-ul {
+.troféus ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
