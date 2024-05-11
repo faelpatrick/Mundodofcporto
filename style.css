@@ -1,53 +1,74 @@
-<!DOCTYPE html>
-<html lang="pt">
+* {
+    margin: 0;
+    padding: 0;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo do F.C.Porto</title>
+body {
+    background-color: #0071b4;
+}
 
-<link rel="stylesheet" href="style.css">
-</head>
+header {
+    background-color: #ffffff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
 
-<body>
-    <header>
-        <h1>Mundodofcporto</h1>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="trofeus.html">TROFEUS</a></li>
-            </ul>
-        </div>
-    </header>
-    <div id="pai">
-        <h1>O mundo do Futebol Clube do porto</h1>
-        <h2>
-            Momentos e jogadores historicos do Porto
-        </h2>
+}
 
-        <img src="./assets/Porto.jpg" alt="">
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
-        <p class="justificado">
-            A equipa de futebol profissional do FC Porto é conhecida pela sua história nacional e internacional. O clube
-            conquistou o título nacional em 30 ocasiões e também teve sucesso internacionalmente. Algumas das suas
-            maiores conquistas incluem:
+header li {
+    margin-right: 50px;
+}
 
-            Liga dos Campeões da UEFA: O Porto venceu este prestigioso torneio duas vezes, nas edições de 1986/87 e
-            2003/04.
-            Taça Intercontinental: O clube também conquistou a Taça Intercontinental em 1987 e 2004.
-            Liga Europa da UEFA: O Porto ganhou a Liga Europa em 2002/03 e 2010/11.
-            Supertaça Europeia: O clube venceu a Supertaça Europeia em 1987.
+#pai {
+    margin: 0px;
+    padding: 30px;
+}
 
-        </p>
+.troféus {
+    height: 100%;
+}
 
-       
+.troféus ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
-    </div>
+.troféus li {
 
-<footer>
-    2024 V.B.A
-</footer>
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    box-shadow: 0px 0px 4px 1px #000;
+    margin: 20px;
+    padding: 22px;
+    border-radius: 10px;
+}
 
-</body>
 
-</html>
+
+
+footer {
+    position: fixed;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: #004065;
+    }
+}
