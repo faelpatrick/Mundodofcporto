@@ -150,6 +150,19 @@ footer {
     padding: 40px;
 }
 
+.info-trofeu { 
+    margin: 20px;
+    display: none;
+}
+.info-trofeu h2 {
+    color: #ffffff;
+}
+.info-trofeu p {
+    color: #ffffff;
+    text-align: justify;
+    margin-top: 15px;
+}
+
 @media screen and (max-width: 1024px) {
     body {
         background-color: #004065;
