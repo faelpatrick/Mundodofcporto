@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trofeus do F.C Porto</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Mundodofcporto</h1>
-        <nav>  
+        <nav>
             <ul>
                 <img src="/Mundodofcporto/assets/small_logo.svg" alt="">
                 <li id="menu-home"><a href="index.html">HOME</a></li>
                 <li id="menu-trofeus"><a href="trofeus.html">TROFEUS</a></li>
             </ul>
         </nav>
+
+        <script>
+            //Remover o alert abaixo
+            alert("Bem Vindo!")
+
+            //Copiar e colar esse codigo abaixo para dentro das tags <script> colar aqui < /script>
+            function minhaFuncao(numero) {
+                const divs = document.querySelectorAll('.info-trofeu');
+                divs.forEach((div, index) => {
+                    div.style.display = (index === numero - 1) ? 'block' : 'none';
+                });
+            }
+        </script>
+
     </header>
 
 
     <div class="troféus" style="background-color: white;">
         <ul>
-            <li><img src="https://files.app.fcporto.pt/images/5c912fe583eeer39oPogJAJb1T9ua.jpg"><span
-                    
-                class="number">19</span>
-            <div>Taça de Portugal</div>
+            <!-- Adicionar um evento onclick="minhaFuncao(4)" em todas <li> seguindo a ordem 1,2,3  como no exemplo abaixo -->
+            <li onclick="minhaFuncao(1)">
+                <img src="https://files.app.fcporto.pt/images/5c912fe583eeer39oPogJAJb1T9ua.jpg"><span
+                    class="number">19</span>
+                <div>Taça de Portugal</div>
             </li>
-            <li><img src="https://files.app.fcporto.pt/images/63d80ca1b3628RrQciU9ImlRZqjlR.png"><span
+            <li onclick="minhaFuncao(1)"><img src="https://files.app.fcporto.pt/images/63d80ca1b3628RrQciU9ImlRZqjlR.png"><span
                     class="number">1</span>
                 <div>Taça da Liga</div>
             </li>
@@ -60,11 +77,96 @@
             </li>
         </ul>
     </div>
+    <div class="info-trofeu">
+        <h2>Taça de Portugal</h2>
+        <p>
+            A Taça de Portugal é uma das competições com mais tradições no panorama desportivo nacional. Considerada
+            como a prova raínha do futebol português, teve a sua edição de estreia na já longínqua época 1938/39.
+            A Taça possui, na verdade, uma série de características muito especiais. Desde logo, engloba na mesma
+            competição um elevado número de clubes de todo o território nacional, não olhando à sua valia desportiva ou
+            financeira.
+        </p>
+    </div>
+    <div class="info-trofeu" id="tacaDaLiga">
+        <h2>Taça da Liga</h2>
+        <p>
+            A Taça da Liga, também conhecida como Allianz Cup por razões de patrocínio, é uma competição de futebol
+            organizada pela Liga Portuguesa de Futebol Profissional, tendo sido criada na temporada 2007–2008.[1] Todas
+            as equipas dos dois primeiros escalões de futebol profissional, Primeira Liga e Segunda Liga, participam
+            nesta competição (com exceção das equipas B).
+        </p>
+    </div>
+    <div class="info-trofeu">
+        <h2>Supertaça</h2>
+        <p>
+            A Supertaça Cândido de Oliveira, também conhecida como Supertaça de Portugal ou apenas Supertaça, é uma
+            competição que desde 1979 se disputa todos os anos entre o campeão nacional de futebol e o vencedor da Taça
+            de Portugal. No caso de mesmo clube vencer o campeonato e a Taça de Portugal disputa-se a Supertaça entre o
+            campeão nacional e o finalista vencido da Taça de Portugal.
+        </p>
+    </div>
+    <div class="info-trofeu">
+        <h2>Primeira Liga</h2>
+        <p>
+            A Primeira Liga é o principal escalão do sistema de ligas de futebol de Portugal. Criada na época 1934–35
+            pela Federação Portuguesa de Futebol, é organizada pela Liga Portuguesa de Futebol Profissional desde a
+            temporada 1995–96. É disputada por dezoito clubes, num sistema de promoção e despromoção com a Segunda Liga.
+        </p>
+    </div>
+    <div class="info-trofeu">
+        <h2>UEFA Europa League</h2>
+        <p>
+            A Liga Europa da UEFA (em inglês: UEFA Europa League) é uma competição continental de clubes de futebol
+            organizada pela União das Associações Europeias de Futebol (UEFA), a segunda mais prestigiada após a Liga
+            dos Campeões da UEFA. Criada em 1971, era chamada de Taça da UEFA (português europeu) ou Copa da UEFA
+            (português brasileiro), até que em 2009 o nome foi alterado para a versão atual
+        </p>
+    </div>
+    <div class="info-trofeu">
+        <h2>Campeonato do Mundo de Clubes</h2>
+        <p>
+            O Campeonato do Mundo de Clubes (português europeu), oficialmente FIFA Club World Cup (em inglês), também
+            conhecida como Campeonato Mundial de Clubes ou simplesmente Mundial de Clubes, foi uma competição anual de
+            futebol organizada pela FIFA e disputada entre os clubes campeões de todas as seis confederações
+            continentais, CONMEBOL (América do Sul), CONCACAF (América do Norte, Central e Caribe), UEFA (Europa), CAF
+            (África), AFC (Ásia) e OFC (Oceania), além do representante do país-sede (o campeão do campeonato nacional
+            do país organizador). Foi disputada em 2000 e de 2005 a 2023.
+        </p>
+    </div>
+    <div class="info-trofeu">
+        <h2>UEFA Champions League</h2>
+        <p>
+            A Liga dos Campeões da UEFA (em inglês: UEFA Champions League) é uma competição anual de futebol em nível
+            continental, organizada pela União das Associações Europeias de Futebol (UEFA) e disputada por clubes da
+            Europa. É um dos torneios mais prestigiados do mundo e a competição de clubes mais prestigiada no futebol
+            europeu, disputada pelas equipes mais bem classificadas nas respectivas ligas nacionais na temporada
+            anterior, sendo o número de vagas atribuído consoante o coeficiente da UEFA
+        </p>
+    </div>
+    <div class="info-trofeu">
+        <h2>Supertaça Europeia</h2>
+        <p>
+            A Supertaça da UEFA (português europeu) ou Supercopa da UEFA (português brasileiro) (anteriormente conhecida
+            como Supertaça Europeia (português europeu) ou Supercopa Europeia (português brasileiro)) é a terceira
+            competição mais importante de futebol da Europa, que se realiza anualmente entre as equipes vencedoras da
+            primeira e da segunda competições mais importantes da Europa ao nível de clubes, respectivamente a Liga dos
+            Campeões da UEFA e a Liga Europa da UEFA.
+        </p>
+    </div>
+    <div class="info-trofeu">
+        <h2>Campeonato de Portugal</h2>
+        <p>
+            Em 1921, após a derrota da Seleção Nacional na sua estreia frente à Espanha, surgiu a necessidade de se
+            alterar o sistema do futebol português, constituído por campeonatos regionais (Porto e Lisboa, com algumas
+            competições irregulares na Madeira). Nasceu assim uma prova regular com os vencedores das provas distritais
+            chamada Campeonato de Portugal, prova que em 1938 passaria depois a designar-se Taça de Portugal.
+        </p>
+    </div>
 
-    
     <footer>
         2024 V.B.A
     </footer>
-    
+
 </body>
+
 </html>
